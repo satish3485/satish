@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=currentTime
+comment0.target=TimeStamp(int)
+comment1.params=x\ y
+comment1.target=TimeStamp(int,\ double)
+comment2.params=
+comment2.target=void\ showTimeStamp()
+numComments=3

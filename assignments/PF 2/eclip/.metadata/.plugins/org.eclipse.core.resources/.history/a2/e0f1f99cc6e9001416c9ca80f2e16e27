@@ -1,0 +1,10 @@
+package inhertance;
+
+public class PhotoPos extends inhertance {
+	
+		public void display(){
+			System.out.println("photo");
+		}
+	
+
+}

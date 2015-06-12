@@ -1,0 +1,67 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+x(n):=sum(1/k!, k, 0, n);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+y(n) := (1 + 1/n)^n;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+z(n) := n/(n!)^(1/n);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+euler:bfloat(%e), fpprec:4;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+t1:1;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+x_n: bfloat(x(1)), fpprec:4;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+for i:2 while not(is(equal(euler, x_n))) do(
+    x_n: bfloat(x(i)), 
+    fpprec: 4,
+    t1: t1 + 1,
+    print("Current: ", x_n),
+    print("Times: ", t1)    
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+y_n: bfloat(y(1)), fpprec:4;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+for i:2 while not(is(equal(euler, y_n))) do(
+    y_n: bfloat(y(i)), 
+    fpprec: 4,
+    t1: t1 + 1,
+    print("Current: ", y_n),
+    print("Times: ", t1)    
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+z_n: bfloat(z(1)), fpprec:4;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+for i:2 while not(is(equal(euler, z_n))) do(
+    z_n: bfloat(z(i)), 
+    fpprec: 4,
+    t1: t1 + 1,
+    print("Current: ", z_n),
+    print("Times: ", t1)    
+);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

@@ -1,0 +1,5 @@
+package1:
+package2: package1
+package3: package1, package2,package6
+package4: package1 | package3
+package5: package1, package2 | package3

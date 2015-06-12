@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=mylist\ key
+comment0.target=int\ search(int[],\ int)
+comment1.params=dat
+comment1.target=void\ max(int[])
+comment2.params=dat
+comment2.target=void\ min(int[])
+comment3.params=dat
+comment3.target=void\ sum(int[])
+comment4.params=r
+comment4.target=void\ sum2(int)
+numComments=5

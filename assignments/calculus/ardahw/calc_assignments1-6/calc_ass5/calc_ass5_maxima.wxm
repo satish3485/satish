@@ -1,0 +1,50 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+for n:1 thru 20 do
+ ( 
+  display(float(sum (i/2^i, i, 1, n)))
+);
+
+for n:1 thru 20 do
+(
+display((2^(n+1) -(n+2))/2^n)
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+a_avg(a,b):= (a+b)/2;
+h_avg(a,b):= 2*a*b/(a+b);
+
+x: 2;
+
+k: 1;
+e: 10^(-15);
+
+a[0]: 5;
+b[0]:x/a[0];
+
+b[n]:= x/a[n];
+a[n]:= h_avg(a[n-1],b[n-1]);
+
+while abs(a[k]-b[k]) >= e do 
+(k: k+1);
+done;
+
+display(k,float(a[k]));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+k:1;
+x[n]:= (1/2)*sum(1/k,k,1,n);
+
+while x[k] < 2 do 
+(k: k+1);
+done;
+
+display(k,float(x[k]));
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

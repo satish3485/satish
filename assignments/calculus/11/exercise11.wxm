@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+f[0](x) := log(x);
+x0 : 2 $
+K : 2 $
+for i:1 thru K do define( f[i](x), diff( f[i-1](x),x ) );
+wxplot2d( [f[0](x), sum( f[k](x0)*(x-x0)^k/k!, k,0,K )], [x,-0.5,4], [y,-5,3], [legend,false] );
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+f[x] := log(2) + sum(((-1)^(k+1)*(x-2)^k)/(k*2^k), k, 1, 2), simpsum$ 
+g[x] := log(2) + sum(((-1)^(k+1)*(x-2)^k)/(k*2^k), k, 1, 4), simpsum$ 
+h[x] := log(2) + sum(((-1)^(k+1)*(x-2)^k)/(k*2^k), k, 1, 6), simpsum$ 
+t[x] := log(x)$       wxplot2d([f[x], g[x], h[x], t[x]], [x,-1/2,4], [y,-3,3]);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

@@ -1,0 +1,41 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+f(x) := exp(x - 2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+g(x) := x;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* Plotting f(x) */ 
+
+wxplot2d(f(x), [x, -5, 5]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* Plotting g(x) */ 
+
+wxplot2d(g(x), [x, -5, 5]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* This shows up intersection between f(x) and g(x) */ 
+
+wxplot2d([g(x), f(x)], [x, -5, 5]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+h(x) := f(x) - x;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+/* This is the function we need to study */ 
+
+wxplot2d(h(x), [x, -5, 5]);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

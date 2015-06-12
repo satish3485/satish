@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=c
+comment0.target=Post(int)
+comment1.params=s
+comment1.target=void\ getUserName(massagepost)
+comment2.params=a
+comment2.target=void\ display(Post)
+comment3.params=post
+comment3.target=void\ addPost(Post)
+numComments=4

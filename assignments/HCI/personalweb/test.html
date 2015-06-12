@@ -1,0 +1,139 @@
+<!--
+Our goal: assess your skills to structure the CSS lectures. We would like to check how you deal with CSS 
+          in terms of previous knowledge and your ability to find solutions online.
+
+What to do: follow the istructions starting from TASK 1. Please don't change the HTML, just work on the CSS.
+
+What not to do: copy.
+
+Expected output: 
+- Fullscreen: https://dl.dropboxusercontent.com/u/7530328/hci/full_resolution.png
+- Responsiveness: https://dl.dropboxusercontent.com/u/7530328/hci/responsive.png
+
+Useful reference: http://www.w3schools.com/cssref/
+
+
+Be careful: The following CSS code has a purely functional purpose and does not represent "good design". 
+            We are going to implement good design with CSS during lectures and you are going to learn best practices in CSS programming.
+-->
+<style>
+
+/* Selectors and Styling */
+/* TASK 1: Apply styles to the HTML elements we set up for you by using CSS selectors.
+    (a) set the font size of the text to 0.8em, the font color navy and the font family "Arial"
+    (b) set set font size oh the header to 3.1em and the style italic
+    (c) set the font size of the content to 1.1em and justify the text
+    (d) set the width of the footer (by selecting it as a child element of body) to 100%, its height to 100px, a margin from the top of 50px and
+        the following image as background image with a size of 100% 100%: https://dl.dropboxusercontent.com/u/7530328/hci/footer-background.jpg
+    (e) style the span element idetified by the id textStart (by selecting it using the css id selector): color: red, and a bold font weight
+    (f) apply the following style only to the link pointing to https://www.google.com: "color: blue; text-decoration: none; font-weight: bold;".
+    (g) apply the following style only to the link pointing to https://www.google.com, when the mouse is over it: "color: black;"
+    (h) apply the following style only to the link pointing to https://www.google.it, when it is visited: "color: purple;"
+*/
+body {
+  font-size : o.8em;
+  font-style : "Arial";
+  color : navy;
+  
+}
+h1{
+    font-size : 3.1em;
+    font-style: italic;
+}
+content{
+  font-size: 1.1em;
+  text-align:justify;
+  }
+body .footer{
+    width: 100%;
+    height: 100px;
+    margin-top:50px;
+    background-image: url("https://dl.dropboxusercontent.com/u/7530328/hci/footer-background.jpg");
+    background-size: 100% 100%;
+}
+#textStart {
+    color : red;
+    font-weight : bold;
+}
+.textStart1 {
+      color : blue;
+      text-decoration : none;
+      font-weight : bold;
+      cursor: black;
+      position:relative
+}
+.textStart1:hover { 
+    color: black;
+    font-size: 1.5em;
+    
+}
+.textStart1:visited {
+    color: purple;
+}
+/* Layout */
+/* TASK 2: Style the layout of the page
+    (a) Make the element with class xleftcol3 float left, with 20% width, 100% height, light blue background
+    (b) Make the element with class xrightcol3 float right, with 20% width, 100% height, light blue background
+    (c) Avoid the overflow happening in the element with class xmiddlecol3 
+        then set it to 60% width and 100% height, with a light grey background
+    (d) Make the element with class xouter3 heigh 500px, float left and with a border of 1px black
+    (e) Have the footer in the right place (hint: "clear: ...")
+*/
+.xleftcol3 {
+  float: left;
+  width: 20%;
+  height:100%;
+  background-color: lightblue;
+}
+.xrightcol3 {
+  float: right;
+  width: 20%;
+  height:100%;
+  background-color: lightblue; 
+}
+.xmiddlecol3 {
+  width: 60%;
+  height: 100%;
+  background-color: lightgrey;
+  overflow: scroll;
+}
+.xouter3 {
+  height: 500px;
+  float: left;
+  border: 1px solid black;
+ 
+  
+}
+.footer {
+  clear: both
+}
+
+
+</style>
+<body>
+  <h1 class="pagetitle">This is a nice Header</h1>
+  
+  <div class="xouter3">
+    <div class="xleftcol3">
+        <!-- Column one start -->
+        I will go the the left
+        <!-- Column one end -->
+    </div>
+    <div class="xrightcol3">
+        <!-- Column three start -->
+        I will go to the right
+    		<!-- Column three end -->
+    </div>
+    <div class="xmiddlecol3">
+      <div class="content">
+          <span id="textStart">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> 
+          Aenean sed lobortis est. In eu diam in </span><span class="textStart1"><a href="https://www.google.com">diam feugiat</a></span> sagittis non ut lacus. 
+          Quisque id aliquet tortor. Sed<span id ="textStart2"> <a href="https://www.google.ch">dolor massa</a></span>, sagittis non venenatis nec, eleifend vitae est. Nullam suscipit tempus feugiat. Sed consectetur purus nibh, eu blandit lectus pulvinar id. Nam mi ligula, luctus in consectetur eu, consectetur at lectus. Suspendisse potenti. Proin viverra quam non placerat venenatis. Praesent nec turpis vel ante congue hendrerit at a dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer porta scelerisque diam, quis ultrices turpis facilisis fermentum. In malesuada nisi sed diam accumsan, ut aliquet arcu semper. Phasellus iaculis placerat odio, id sodales dolor blandit id. Integer ornare bibendum nisl, id varius estLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed lobortis est. In eu diam in diam feugiat sagittis non ut lacus. Quisque id aliquet tortor. Sed dolor massa, sagittis non venenatis nec, eleifend vitae est. Nullam suscipit tempus feugiat. Sed consectetur purus nibh, eu blandit lectus pulvinar id. Nam mi ligula, luctus in consectetur eu, consectetur at lectus. Suspendisse potenti. Proin viverra quam non placerat venenatis. Praesent nec turpis vel ante congue hendrerit at a dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer porta scelerisque diam, quis ultrices turpis facilisis fermentum. In malesuada nisi sed diam accumsan, ut aliquet arcu semper. Phasellus iaculis placerat odio, id sodales dolor blandit id. Integer ornare bibendum nisl, id varius est.
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    
+  </div>
+</body>

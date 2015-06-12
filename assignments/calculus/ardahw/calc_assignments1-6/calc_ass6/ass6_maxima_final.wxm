@@ -1,0 +1,44 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+t:1;
+x[n]:= sum(1/k!,k,0,n);
+
+while  x[t] <  2.718 do
+
+
+(t:t+1);
+done;
+
+display(t,float(x[t]));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+t:1;
+y[n]:= (1+1/n)^n;
+
+
+while  y[t] < 2.718 do
+
+
+
+(t:t+1);
+done;
+
+display(t,float(y[t]));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+t:1;
+z[n]:= n/(n!)^(1/n);
+while  bfloat(z[t]) < 2.718 do
+
+(t:t+1);
+done;
+
+display(t, bfloat(z[t]));
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

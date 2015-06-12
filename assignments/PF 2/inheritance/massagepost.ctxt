@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=a\ b
+comment0.target=massagepost(int,\ int)
+comment1.params=s
+comment1.target=void\ printShortSummary(Post)
+comment2.params=
+comment2.target=void\ display()
+comment3.params=massages
+comment3.target=void\ addcoment(massagepost)
+comment4.params=b
+comment4.target=void\ display(java.lang.String)
+numComments=5

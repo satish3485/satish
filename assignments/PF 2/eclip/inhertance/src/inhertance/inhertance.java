@@ -1,0 +1,10 @@
+package inhertance;
+
+public class inhertance {
+
+	public void display(){
+		System.out.println("username");
+		System.out.print("timestamp");
+		
+	}
+}
